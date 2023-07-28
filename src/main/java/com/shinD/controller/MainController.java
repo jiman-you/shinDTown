@@ -160,6 +160,10 @@ public class MainController extends HttpServlet {
 			controller = new com_userName();
 			break;
 		//진경
+		case "/view/chatView/makeNewChatRoom.com":
+			//controller = new MakeNewChatRoomController();
+			break;	
+			
 		case "/view/chatView/selectChatRoom.com":
 			controller = new SelectChatRoomController();
 			break;
@@ -176,11 +180,13 @@ public class MainController extends HttpServlet {
  			controller = new SelectReceiveMessageController();
  			break;
 		case "/view/chatView/selectNotReadMessage.com":
+			//System.out.println("notReadMem>>>>>>>");
  			controller = new SelectNotReadMessageController();
 			 break;	 
 		case "/view/chatView/selectReadOneMessage.com":
  			controller = new SelectReadOneMessageController();
 			 break;	
+		
 		
 		default:
 			break;
